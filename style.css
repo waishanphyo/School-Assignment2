@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* Nav-Bar */
+.nav-bar{
+    width: 100%;
+    background-color: #17181a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+.nav-bar p,a,i{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+}
+/* .nav-bar i:active{
+    color: #faf739;
+} */
+#aup::after{
+     content: 'RollNumber';
+     position: relative;
+     top: 5px;
+     right: 48%;
+     font-size: 10px;
+     
+}
+#dlmode::after{
+    content: 'Light/Dark';
+    position: relative;
+    top: 10px;
+    right: 48%;
+    font-size: 10px;
+    
+}
+.nav-bar i:hover{
+      color: #1e9bff;
+      color: #1eff56 !important;
+}
+.nav-bar p:hover{
+    color: #1eff56;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #27282cef;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+/* Heading */
+
+.heading{
+    border: 1px solid #FFF;
+    width: 90%;
+    margin-top: 5px;
+}
+/* remove border */
+.removeb{
+      border:none ;
+}
+/* light */
+.lheading{
+    border-color:#27282c ;
+}
+.heading .part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading img{
+    width: 100px;
+   
+}
+.heading img,h1{
+    padding: 10px;
+}
+.heading h1{
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: -1px 0 #00BBF0, 0 1px #00BBF0, 1px 0 #00BBF0, 0 -1px #00BBF0;
+}
+
+/* second */
+.second{
+    margin-top: 10px;
+    width: 90%;
+    border: 1px solid #fff;
+    text-align: center;
+    font-family: 'Kite One', sans-serif;
+}
+.removeb{
+    border:none !important;
+}
+/* light */
+.lsecond{
+    border-color: #27282c;
+}
+.second h2 {
+    padding: 10px;
+    color: #111;
+    text-shadow: -1px 0 #00BBF0, 0 1px #00BBF0, 1px 0 #00BBF0, 0 -1px #00BBF0;
+    text-transform: uppercase;
+    position: relative;
+}
+.second h2 span{
+    animation: animate 1s ease-in-out infinite;
+    position: relative;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        color: red;
+        
+    } 
+   
+}
+
+/* list */
+.list{
+    border: 1px solid #fff;
+    width: 90%;
+    text-align: start;
+    color: #00BBF0;
+}
+
+.llist{
+    border-color:#27282c;
+    color: #00204a;
+}
+.list ul li{
+     margin-top: 5px;
+     font-family: 'Cormorant Upright', serif;
+     font-size: 25px;
+     position: relative;
+     /* text-shadow: -1px 0 #00BBF0, 0 1px #00BBF0, 1px 0 #00BBF0, 0 -1px #00BBF0; */
+     letter-spacing: 4px;
+     margin-left: 24px; 
+     padding: 5px; 
+     /* list-style: none; */
+}
+/* Table */
+table{
+    width: 90%;
+    border-collapse: collapse;
+    color: #1e9bff;
+}
+/* light */
+.ltable{
+    border-color: #17181a;
+    color: #00204a;
+}
+caption p{
+    margin: 15px 0px;
+  
+    font-size: 20px;
+}
+th,td{
+    border: 1px solid #fff;  
+    padding: 10px;
+    text-align: center;
+}
+.lth,.ltd{
+      border-color: #17181a;
+}
+/* button */
+.btn{
+    text-transform: uppercase;
+    padding: 3px 5px;
+    transition:0.5s ;
+    background-color: #FFF;
+    transition: 0.5s;
+    position: relative;
+    color: #FFF;
+}
+.btn:hover{
+    letter-spacing: 0.2rem;
+    background-color: #6eff3e;
+    box-shadow: 0 0 20px #6eff3e;
+    color: #6eff3e;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background-color: #27282c;
+}
+.btn .tt{
+    position: relative;
+    z-index: 1;
+}
+.clight{
+    background-color: #FFF;
+}
+/* Assignment */
+.abox{
+    position: absolute;
+    top: -300px;
+    left: 45%;
+    text-align: center;
+    background-color: #00204ae7;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s linear;
+    position: fixed;
+}
+.active{
+    top: 10%  ;
+}
+.rol{
+    font-size: larger;
+  
+}
+.nam{
+ margin-top: 15px;
+ font-size: larger;
+}
+.lname{
+    float: left;
+    color: #FFF;
+}
+.lroll{
+    color: #FFF;
+}
+#roll,#name{
+    float: right;
+    font-size: larger;
+    outline: none;
+   
+}
+
+.abox span{
+    color: #FFF;
+    position: relative;
+    display: inline-block;
+    animation: load 1s ease-in-out infinite; 
+    animation-delay: calc(0.1s * var(--j));
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+@keyframes load{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+        
+    }
+    50%,100%{
+        transform: translateY(0px);
+    }
+}
+.bgactive{
+    animation: bg 2s ease-in-out infinite; 
+    background-color: green;
+    animation-delay: 1s;
+}
+@keyframes bg{
+    0%{
+        opacity: 0.5;
+    }
+    35%{
+        opacity: 1;
+    }
+    65%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Responsive */
+@media only screen and (max-width: 400px){
+    .nav-bar p,a{
+        font-size: 12px;
+    }
+    .nav-bar i{
+            font-size: 20px;
+    }
+    #aup::after{
+       font-size: 5px;
+   }
+   #dlmode::after{
+      font-size: 5px;
+       
+   }
+   .abox {
+        font-size: 8px;
+        left:30%;
+   }
+   .abox span{
+       font-size: 8px;
+   }
+   .lname,.lroll{
+       font-size: 10px;
+   }
+   #roll,#name{
+       width: 70px;
+       font-size: 10px;
+   }
+   .part h1{
+       font-size: 10px;
+   }
+   .part img{
+       width: 50px;
+   }
+   .second h2 span{
+       font-size: 8px;
+       
+   }
+   .list ul li{
+    font-size: 10px;
+    letter-spacing: 0px;
+   }
+   table{
+       width: 100%;
+   }
+   table caption p{
+       font-size: 10px;
+   }
+   th,tr,td{
+       padding: 2px;
+       font-size: 5px;
+   }
+}

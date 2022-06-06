@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+     <!-- Assignment -->
+     <div class="abox">
+        <span style="--j:1;">A</span>
+        <span style="--j:2;">S</span>
+        <span style="--j:3;">S</span>
+        <span style="--j:4;">I</span>
+        <span style="--j:5;">G</span>
+        <span style="--j:6;">N</span>
+        <span style="--j:7;">M</span>
+        <span style="--j:9;">E</span>
+        <span style="--j:10;">N</span>
+        <span style="--j:11;">T</span>
+        <span style="--j:12;">II</span><br>
+       <div class="rol">
+        <label for="roll" class="lroll" >Roll Number-</label>
+        <input type="text" name="rollnumber" value="UCST-3049" readonly id="roll">
+       </div>
+        
+       <div class="nam">
+        <label for="name" class="lname">Name-</label>
+        <input type="text" name="name" value="Wai Shan Phyo" id="name" readonly>
+       </div>
+    </div>
+    <!-- nav-bar -->
+    <div class="nav-bar">
+        <p id="remove">Remove-Border</p>
+        <!-- <a href="#">Contact</a> -->
+        <i class='bx bx-chevron-up' id="aup"></i>
+        <i class='bx bx-moon' id="dlmode"></i>
+    </div>  
+     
+    <!-- container -->
+    <div class="container">
+        <!-- heading -->
+        <div class="heading">
+            <div class="part">
+                <img src="https://upload.wikimedia.org/wikipedia/my/5/5d/Logo_ucst.png">
+                <h1> University Of Computer Studies Toungoo</h1>
+            </div>
+        </div>
+        <!-- Second -->
+        <div class="second">
+            <h2><span style="--i:1;">S</span>
+                <span style="--i:2;">e</span>
+                <span style="--i:3;">c</span>
+                <span style="--i:4;">o</span>
+                <span style="--i:5;">n</span>
+                <span style="--i:6;">d</span>
+                <span  style="--i:7;">_</span>
+                <span style="--i:7;">y</span>
+                <span style="--i:8;">e</span>
+                <span style="--i:9;">a</span>
+                <span style="--i:10;">r</span>
+                <span  style="--i:10;">_</span>
+                <span style="--i:11;">c</span>
+                <span style="--i:12;">o</span>
+                <span style="--i:13;">u</span>
+                <span style="--i:14;">r</span>
+                <span style="--i:15;">s</span>
+                <span style="--i:16;">e</span>
+                <span style="--i:17;">s</span>
+            </h2>
+        </div>
+
+        <!-- list -->
+        <div class="list">
+            <ul>
+                <li>J2EE</li>
+                <li>Web Development</li>
+                <li>Introduction to Linear Algebra</li>
+                <li>Software Engineering</li>
+                <li>English</li>
+                <li>Datastructures</li>
+            </ul>
+        </div>
+        
+    <!-- Time Table -->
+        <table>
+            <caption>
+                <p class="one">University Of Computer Studies Toungoo</p>
+                <p class="two">2022Academic Year</p>
+                <p class="three">Second Year(CS)Second Semester Time Table</p>
+            </caption>
+            
+                 <!-- Time -->
+                <tr>
+                    <th>Day</th>
+                    <td class="time" value="9">9:00-10:00</td>
+                    <td class="time" value="10">10:00-11:00</td>
+                    <td class="time" value="11">11:00-12:00</td>
+                    <td class="time" value="12">12:00-1:00</td>
+                    <td class="time" value="13">1:00-2:00</td>
+                    <td class="time" value="14">2:00-3:00</td>
+                    <td class="time" value="15">3:00-4:00</td>
+                </tr>
+                  
+                <!-- Mon -->
+                <tr id="mon">
+                    <th class="day" >Mon</th>
+                    <td value="9">LMS</td>
+                    <td colspan="2" value="10">Web Development</td>
+                    <td rowspan="5" value="11"style="transform:rotateZ(-90deg) ;">Lunch</td> 
+                    <td value="12">DataStructure</td>
+                    <td value="13">Introduction to Linear Algebra</td>
+                    <td value="14">SE</td>
+                 </tr>
+                  
+                 <!-- Tues -->
+                 <tr id="tues">
+                    <th class="day" >Tues</th>
+                    <td>DataStructure</td>
+                    <td>Introduction to Linear Algebra</td>
+                    <td>English</td>
+                    <td>J2EE</td>
+                    <td>LMS</td>
+                    <td>SE</td>
+                 </tr>
+        
+                <!--Wed -->
+                <tr id="wed">
+                    <th class="day" >Wed</th>
+               
+                   <td colspan="2">J2EE</td>
+                   <td >SE</td>
+                   <td>English</td>
+                   <td>LMS</td>
+                   <td>LMS</td>
+            </tr>
+            <!-- Thurs -->
+            <tr id="thurs">
+                <th class="day" >Thurs</th>
+                <td>English</td>
+                <td>SE</td>
+                <td>Assignment</td>
+                <td colspan="2">Web Development</td>
+                <td>Introduction to Linear Algebra</td>
+            </tr>
+            <!-- Fri -->
+            <tr id="fri">
+                <th class="day">Fri</th>
+                <td colspan="2">Introduction to Linear Algebra</td>
+                <td>Data DataStructure</td>
+                <td>SE</td>
+                <td>Assignment</td>
+                <td>Assignment</td>
+            </tr>
+        </table>
+        <div class="btn"><span class="tt">Time Table</span></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
